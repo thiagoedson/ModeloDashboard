@@ -1,439 +1,383 @@
-# 🎯 Modelo Dashboard - Base Whitelabel para Dashboards Modernos
+# 🎯 Dashboard Whitelabel - Next.js 15 + shadcn/ui
 
-> Uma base limpa, moderna e totalmente customizável para criar dashboards e painéis administrativos com as tecnologias mais recentes do ecossistema React.
+> Sistema de dashboard whitelabel completo e pronto para produção, com autenticação, tema preto e branco, e design premium.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.0-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0-blue?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
-[![NextUI](https://img.shields.io/badge/NextUI-2.4-000000)](https://nextui.org/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-Latest-000000)](https://ui.shadcn.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
-## 📋 Índice
+## 📸 Preview
 
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [Características](#-características)
-- [Tecnologias](#-tecnologias)
-- [Pré-requisitos](#-pré-requisitos)
-- [Instalação](#-instalação)
-- [Desenvolvimento](#️-desenvolvimento)
-- [Build e Deploy](#-build-e-deploy)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Customização](#-customização)
-- [Documentação Adicional](#-documentação-adicional)
-- [Casos de Uso](#-casos-de-uso)
-- [Roadmap](#-roadmap)
-- [Contribuindo](#-contribuindo)
-- [Licença](#-licença)
+Sistema completo com:
+- ✅ Página de Login
+- ✅ Dashboard com Sidebar e Header
+- ✅ Páginas de Usuários e Produtos
+- ✅ Sistema de Autenticação (localStorage)
+- ✅ Tema Claro/Escuro
+- ✅ Design Premium Preto e Branco
 
 ---
 
-## 🎯 Sobre o Projeto
+## 🚀 Quick Start
 
-O **Modelo Dashboard** é uma base **whitelabel/abstrata** criada para acelerar o desenvolvimento de dashboards, painéis administrativos e aplicações de visualização de dados. Ele foi projetado para ser:
+```bash
+# Instalar dependências
+npm install
 
-- 🎨 **Totalmente Customizável** - Adapte cores, temas, layouts e componentes facilmente
-- 🚀 **Pronto para Produção** - Código otimizado e seguindo as melhores práticas
-- 📱 **Responsivo** - Funciona perfeitamente em desktop, tablet e mobile
-- 🌙 **Dark/Light Mode** - Suporte nativo a temas claro e escuro
-- ♿ **Acessível** - Componentes acessíveis por padrão (NextUI)
-- 🔧 **Modular** - Arquitetura escalável e fácil de manter
-- 📊 **Analytics-Ready** - Cards e componentes prontos para visualização de dados
+# Rodar em desenvolvimento
+npm run dev
 
-### Por que usar este template?
+# Acessar
+http://localhost:3000
+```
 
-✅ Economize **horas de setup inicial** com configuração já otimizada
-✅ Stack moderna e atualizada (React 19, Next.js 15)
-✅ Componentes UI profissionais prontos para uso
-✅ TypeScript configurado para desenvolvimento type-safe
-✅ Tailwind CSS para estilização rápida e consistente
-✅ Arquitetura escalável desde o início
+**Credenciais de teste:**
+- Email: `admin@example.com` / Senha: `admin123`
+- Email: `user@example.com` / Senha: `user123`
 
 ---
 
 ## ✨ Características
 
-### Funcionalidades Principais
+### 🎨 Design e UI
+- **Tema Whitelabel**: Preto e branco premium, sem cores adicionais
+- **shadcn/ui**: Componentes modernos e acessíveis
+- **Dark Mode**: Tema claro/escuro integrado
+- **Fonte Premium**: Inter (Google Fonts)
+- **Totalmente Responsivo**: Mobile, tablet e desktop
 
-- ✅ **Next.js 15 App Router** - Roteamento moderno com React Server Components
-- ✅ **React 19** - Versão mais recente com novas funcionalidades
-- ✅ **TypeScript 5.6** - Desenvolvimento type-safe e autocomplete
-- ✅ **Tailwind CSS 3.4** - Estilização utility-first com dark mode
-- ✅ **NextUI 2.4** - Biblioteca de componentes UI modernos e acessíveis
-- ✅ **Hero Icons 2.1** - +200 ícones SVG profissionais
-- ✅ **Framer Motion** - Biblioteca de animações fluidas
-- ✅ **next-themes** - Gerenciamento de tema dark/light
-- ✅ **Layout Responsivo** - Grid system adaptável (mobile-first)
-- ✅ **Glassmorphism UI** - Design moderno com backdrop blur
-- ✅ **ESLint Configurado** - Code quality e linting automático
+### 🔐 Autenticação
+- Sistema de login completo
+- Armazenamento com localStorage
+- Proteção automática de rotas
+- Hook `useAuth` customizado
+- Pronto para integração com API
 
-### Componentes Incluídos
+### 📊 Funcionalidades
+- Dashboard com estatísticas e KPIs
+- Sidebar com navegação
+- Header com menu de usuário
+- Páginas de exemplo (Usuários, Produtos)
+- Dados mock para testes sem API
+- TypeScript em 100% do código
 
-- 📊 **Cards de Estatísticas** - Indicadores de KPIs com trends
-- 🎨 **Theme Toggle** - Botão de alternância dark/light
-- 📈 **Trend Indicators** - Chips coloridos com setas de tendência
-- 🎴 **Card System** - Sistema de cards reutilizáveis
-- 🎯 **Responsive Grid** - Grid adaptável para diferentes telas
-
----
-
-## 🛠️ Tecnologias
-
-### Core Stack
-
-| Tecnologia | Versão | Descrição |
-|-----------|--------|-----------|
-| **Next.js** | 15.0.3 | Framework React para produção |
-| **React** | 19.0.0 | Biblioteca para interfaces de usuário |
-| **TypeScript** | 5.6.3 | JavaScript com tipagem estática |
-
-### UI & Styling
-
-| Tecnologia | Versão | Descrição |
-|-----------|--------|-----------|
-| **Tailwind CSS** | 3.4.14 | Framework CSS utility-first |
-| **NextUI** | 2.4.8 | Componentes UI modernos |
-| **Hero Icons** | 2.1.5 | Ícones SVG de alta qualidade |
-| **Framer Motion** | 11.11.17 | Animações e transições |
-| **next-themes** | 0.4.3 | Gerenciamento de temas |
-
-### Development Tools
-
-| Ferramenta | Versão | Descrição |
-|-----------|--------|-----------|
-| **ESLint** | 9.14.0 | Linting e code quality |
-| **PostCSS** | 8.4.47 | Processamento de CSS |
-| **Autoprefixer** | 10.4.20 | Prefixos CSS automáticos |
-
----
-
-## 📋 Pré-requisitos
-
-Antes de começar, certifique-se de ter instalado:
-
-- **Node.js** - Versão 18.17 ou superior ([Download](https://nodejs.org/))
-- **npm**, **yarn** ou **pnpm** - Gerenciador de pacotes
-- **Git** - Para controle de versão ([Download](https://git-scm.com/))
-
-Verificar instalações:
-
-```bash
-node --version  # v18.17.0 ou superior
-npm --version   # 9.0.0 ou superior
-git --version   # 2.0.0 ou superior
-```
-
----
-
-## 📦 Instalação
-
-### 1. Clonar o Repositório
-
-```bash
-# Clone este repositório
-git clone https://github.com/seu-usuario/ModeloDashboard.git
-
-# Entre no diretório
-cd ModeloDashboard
-```
-
-### 2. Instalar Dependências
-
-Escolha seu gerenciador de pacotes preferido:
-
-```bash
-# Com npm
-npm install
-
-# Com yarn
-yarn install
-
-# Com pnpm
-pnpm install
-```
-
-### 3. Configurar Variáveis de Ambiente (Opcional)
-
-Crie um arquivo `.env.local` na raiz do projeto:
-
-```env
-# Exemplo de variáveis de ambiente
-NEXT_PUBLIC_APP_NAME=Meu Dashboard
-NEXT_PUBLIC_API_URL=https://api.exemplo.com
-```
-
----
-
-## 🛠️ Desenvolvimento
-
-### Iniciar Servidor de Desenvolvimento
-
-```bash
-npm run dev
-```
-
-Abra [http://localhost:3000](http://localhost:3000) no navegador.
-
-O servidor recarrega automaticamente quando você edita arquivos.
-
-### Scripts Disponíveis
-
-```bash
-# Desenvolvimento
-npm run dev          # Inicia servidor de desenvolvimento
-
-# Build
-npm run build        # Cria build otimizado para produção
-npm start            # Inicia servidor de produção
-
-# Code Quality
-npm run lint         # Executa ESLint
-```
-
----
-
-## 🏗️ Build e Deploy
-
-### Build Local
-
-```bash
-# Criar build de produção
-npm run build
-
-# Testar build localmente
-npm start
-```
-
-### Deploy em Plataformas
-
-#### Vercel (Recomendado)
-
-```bash
-# Instalar Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
-Ou conecte seu repositório GitHub na [Vercel Dashboard](https://vercel.com/new).
-
-#### Outras Plataformas
-
-- **Netlify** - [Guia de Deploy](https://docs.netlify.com/frameworks/next-js/)
-- **AWS Amplify** - [Guia de Deploy](https://docs.amplify.aws/nextjs)
-- **Docker** - [Exemplo de Dockerfile](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
+### 🛠️ Stack Tecnológica
+- **Next.js 15** - App Router, React Server Components
+- **React 19** - Versão mais recente
+- **TypeScript 5.6** - Type safety completo
+- **Tailwind CSS 3.4** - Estilização utility-first
+- **shadcn/ui** - Componentes UI premium
+- **Lucide React** - Ícones modernos
+- **next-themes** - Gerenciamento de tema
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-ModeloDashboard/
-├── 📂 src/
-│   ├── 📂 app/                    # Next.js App Router
-│   │   ├── 📄 layout.tsx         # Layout raiz com metadata e providers
-│   │   ├── 📄 page.tsx           # Página principal do dashboard
-│   │   ├── 📄 providers.tsx      # Configuração de providers (NextUI, Theme)
-│   │   └── 📄 globals.css        # Estilos globais e variáveis CSS
-│   ├── 📂 components/            # Componentes reutilizáveis (criar conforme necessário)
-│   ├── 📂 lib/                   # Utilitários e helpers (criar conforme necessário)
-│   ├── 📂 hooks/                 # React hooks customizados (criar conforme necessário)
-│   ├── 📂 types/                 # TypeScript types/interfaces (criar conforme necessário)
-│   └── 📂 styles/                # Arquivos CSS adicionais (opcional)
-├── 📂 public/                    # Arquivos estáticos (imagens, fontes, etc)
-├── 📂 docs/                      # Documentação do projeto
-├── 📄 next.config.mjs            # Configuração do Next.js
-├── 📄 tailwind.config.ts         # Configuração do Tailwind CSS
-├── 📄 tsconfig.json              # Configuração do TypeScript
-├── 📄 postcss.config.js          # Configuração do PostCSS
-├── 📄 .eslintrc.json             # Configuração do ESLint
-├── 📄 .gitignore                 # Arquivos ignorados pelo Git
-├── 📄 package.json               # Dependências e scripts
-└── 📄 README.md                  # Este arquivo
+src/
+├── app/
+│   ├── dashboard/          # Área autenticada
+│   │   ├── layout.tsx     # Layout com sidebar/header
+│   │   ├── page.tsx       # Dashboard principal
+│   │   ├── users/         # Página de usuários
+│   │   └── products/      # Página de produtos
+│   ├── login/             # Página de login
+│   ├── layout.tsx         # Layout raiz (fonte, metadata)
+│   └── page.tsx           # Redirect para login/dashboard
+│
+├── components/
+│   ├── ui/                # Componentes shadcn/ui
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── card.tsx
+│   │   ├── avatar.tsx
+│   │   └── ...
+│   └── layout/            # Componentes de layout
+│       ├── sidebar.tsx
+│       └── header.tsx
+│
+├── hooks/
+│   └── useAuth.ts         # Hook de autenticação
+│
+├── lib/
+│   └── utils.ts           # Utilitários (cn, etc)
+│
+├── mock-data/
+│   ├── users.ts           # Usuários mock
+│   └── dashboard.ts       # Dados mock do dashboard
+│
+└── types/
+    └── index.ts           # Tipos TypeScript
 ```
 
-### Diretórios Principais
+---
 
-- **`/src/app`** - Páginas e rotas do Next.js (App Router)
-- **`/src/components`** - Componentes React reutilizáveis
-- **`/public`** - Arquivos estáticos acessíveis publicamente
-- **`/docs`** - Documentação adicional do projeto
+## 🎯 Como Usar
+
+### 1. Instalação
+
+```bash
+git clone <seu-repositorio>
+cd ModeloDashboard
+npm install
+```
+
+### 2. Configurar API (Opcional)
+
+```bash
+cp .env.example .env.local
+```
+
+Edite `.env.local`:
+```env
+NEXT_PUBLIC_API_URL=https://sua-api.com
+```
+
+### 3. Desenvolvimento
+
+```bash
+npm run dev
+```
+
+### 4. Build para Produção
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 🔌 Integração com API
+
+O projeto vem com dados mock para funcionar sem API. Para conectar sua API:
+
+### Autenticação
+
+Edite `src/hooks/useAuth.ts`:
+
+```typescript
+// Substitua:
+const data = await mockLogin(credentials);
+
+// Por:
+const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(credentials),
+});
+const data = await response.json();
+```
+
+**Formato esperado da API:**
+```json
+{
+  "user": {
+    "id": "1",
+    "name": "Nome do Usuário",
+    "email": "email@example.com",
+    "avatar": "url-avatar",
+    "role": "admin"
+  },
+  "token": "jwt-token"
+}
+```
+
+### Dados do Dashboard
+
+Substitua as importações em `src/app/dashboard/page.tsx`:
+```typescript
+// Substitua:
+import { mockDashboardStats } from "@/mock-data/dashboard";
+
+// Por chamada à API:
+const stats = await fetchStats();
+```
 
 ---
 
 ## 🎨 Customização
 
-Este template foi criado para ser **100% customizável**. Aqui está como começar:
+### Cores e Tema
 
-### 1. Cores e Tema
+As cores estão em `src/app/globals.css`:
 
-Edite `/tailwind.config.ts`:
-
-```typescript
-theme: {
-  extend: {
-    colors: {
-      primary: '#sua-cor-primaria',
-      secondary: '#sua-cor-secundaria',
-      // ... adicione suas cores
-    }
-  }
+```css
+:root {
+  --background: 0 0% 100%;     /* Branco */
+  --foreground: 0 0% 3.9%;     /* Preto */
+  --primary: 0 0% 9%;          /* Preto primário */
+  /* ... outras variáveis ... */
 }
 ```
 
-### 2. Metadata e SEO
+### Logo e Branding
 
-Edite `/src/app/layout.tsx`:
-
-```typescript
-export const metadata: Metadata = {
-  title: 'Seu Dashboard',
-  description: 'Sua descrição',
-  // ... mais metadata
-}
+**Sidebar** (`src/components/layout/sidebar.tsx`):
+```tsx
+<h2 className="text-2xl font-bold">Seu Logo</h2>
 ```
 
-### 3. Conteúdo do Dashboard
-
-Edite `/src/app/page.tsx`:
-
-```typescript
-// Substitua os cards de exemplo pelos seus dados reais
-// Conecte com sua API
-// Adicione seus componentes
+**Login** (`src/app/login/page.tsx`):
+```tsx
+<h1 className="text-4xl font-bold mb-2">Sua Marca</h1>
 ```
 
-### 4. Componentes NextUI
+### Menu de Navegação
 
-Customize o tema do NextUI em `/tailwind.config.ts`:
-
+Edite `src/mock-data/dashboard.ts`:
 ```typescript
-plugins: [
-  nextui({
-    themes: {
-      light: { /* seu tema claro */ },
-      dark: { /* seu tema escuro */ }
-    }
-  })
-]
+export const mockMenuItems: MenuItem[] = [
+  {
+    id: "1",
+    label: "Dashboard",
+    icon: "layout-dashboard",
+    href: "/dashboard",
+  },
+  // Adicione mais itens...
+];
 ```
 
-Para mais detalhes, consulte [CUSTOMIZATION.md](./docs/CUSTOMIZATION.md).
+### Adicionar Nova Página
+
+1. Crie `src/app/dashboard/sua-pagina/page.tsx`
+2. Adicione ao menu em `src/mock-data/dashboard.ts`
+3. Use os componentes prontos de `src/components/ui`
 
 ---
 
-## 📚 Documentação Adicional
+## 🧩 Componentes Disponíveis
 
-Documentação detalhada disponível em `/docs`:
+### Button
+```tsx
+<Button>Clique aqui</Button>
+<Button variant="outline">Outline</Button>
+<Button variant="ghost" size="sm">Pequeno</Button>
+```
 
-- 📖 **[CUSTOMIZATION.md](./docs/CUSTOMIZATION.md)** - Guia completo de customização
-- 🏛️ **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - Arquitetura e decisões de design
-- 🧩 **[COMPONENTS.md](./docs/COMPONENTS.md)** - Guia de componentes disponíveis
-- 🚀 **[DEPLOYMENT.md](./docs/DEPLOYMENT.md)** - Guia de deploy em produção
+### Input + Label
+```tsx
+<Label htmlFor="email">Email</Label>
+<Input id="email" type="email" placeholder="email@example.com" />
+```
+
+### Card
+```tsx
+<Card>
+  <CardHeader>
+    <CardTitle>Título</CardTitle>
+  </CardHeader>
+  <CardContent>Conteúdo</CardContent>
+</Card>
+```
+
+### Avatar
+```tsx
+<Avatar>
+  <AvatarImage src="/avatar.jpg" />
+  <AvatarFallback>AB</AvatarFallback>
+</Avatar>
+```
 
 ---
 
-## 💼 Casos de Uso
+## 📚 Documentação
 
-Este template é ideal para:
-
-- 📊 **Dashboards Analytics** - Visualização de métricas e KPIs
-- 🏢 **Painéis Administrativos** - Admin panels e backoffice
-- 📈 **Aplicações SaaS** - Dashboard de produtos SaaS
-- 🎯 **Portais Internos** - Intranets e portais corporativos
-- 💰 **Fintech Dashboards** - Painéis financeiros e bancários
-- 📱 **Apps de Gerenciamento** - CRM, CMS, ERP simplificados
-- 🎓 **Plataformas Educacionais** - Painéis de alunos/professores
-- 🏥 **Healthtech** - Dashboards médicos e de saúde
+Para guia completo de uso, consulte:
+- **[WHITELABEL_GUIDE.md](./WHITELABEL_GUIDE.md)** - Guia completo de uso e customização
 
 ---
 
-## 🗺️ Roadmap
+## 🚀 Deploy
 
-Funcionalidades planejadas:
+### Vercel (Recomendado)
 
-- [ ] Sistema de autenticação (NextAuth.js)
-- [ ] Integração com APIs exemplo
-- [ ] Mais componentes de dashboard (gráficos, tabelas)
-- [ ] Testes unitários e E2E
-- [ ] Storybook para documentação de componentes
-- [ ] Mais temas prontos
-- [ ] Exemplos de integração com bancos de dados
-- [ ] PWA support
-- [ ] Internacionalização (i18n)
+```bash
+npm i -g vercel
+vercel
+```
+
+Ou conecte seu repositório no [Vercel Dashboard](https://vercel.com).
+
+### Outras Plataformas
+
+- **Netlify**: [Guia](https://docs.netlify.com/frameworks/next-js/)
+- **AWS Amplify**: [Guia](https://docs.amplify.aws/nextjs)
+- **Docker**: Build otimizado com Next.js standalone
+
+---
+
+## 🔐 Segurança
+
+- ✅ Rotas protegidas automaticamente
+- ✅ Token armazenado em localStorage
+- ✅ Validação de autenticação em cada acesso
+- ⚠️ **Produção**: Use httpOnly cookies e refresh tokens
+
+---
+
+## 📝 Scripts Disponíveis
+
+```bash
+npm run dev      # Desenvolvimento (localhost:3000)
+npm run build    # Build de produção
+npm start        # Servidor de produção
+npm run lint     # Linting com ESLint
+```
 
 ---
 
 ## 🤝 Contribuindo
 
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1. Faça um **Fork** do projeto
-2. Crie uma **Branch** para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Faça **Commit** das suas mudanças (`git commit -m 'Add: Nova feature'`)
-4. Faça **Push** para a Branch (`git push origin feature/MinhaFeature`)
-5. Abra um **Pull Request**
-
-### Diretrizes
-
-- Siga o padrão de código existente
-- Adicione testes para novas funcionalidades
-- Atualize a documentação conforme necessário
-- Use commits semânticos (feat:, fix:, docs:, etc)
+1. Fork o projeto
+2. Crie sua branch (`git checkout -b feature/MinhaFeature`)
+3. Commit suas mudanças (`git commit -m 'Add: Nova feature'`)
+4. Push para a branch (`git push origin feature/MinhaFeature`)
+5. Abra um Pull Request
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-Isso significa que você pode:
-
-- ✅ Usar comercialmente
-- ✅ Modificar
-- ✅ Distribuir
-- ✅ Usar privadamente
+MIT License - use livremente em projetos comerciais.
 
 ---
 
-## 👤 Autor
+## 🙏 Tecnologias Utilizadas
 
-**Seu Nome**
-
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-nome)
+- [Next.js](https://nextjs.org/) - Framework React
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes UI
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [Lucide](https://lucide.dev/) - Ícones
+- [Radix UI](https://www.radix-ui.com/) - Primitivos UI
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática
 
 ---
 
-## 🙏 Agradecimentos
+## 💡 Casos de Uso
 
-Este projeto utiliza tecnologias incríveis criadas por:
-
-- [Next.js](https://nextjs.org/) - Time da Vercel
-- [React](https://react.dev/) - Meta/Facebook
-- [Tailwind CSS](https://tailwindcss.com/) - Tailwind Labs
-- [NextUI](https://nextui.org/) - NextUI Team
-- [Hero Icons](https://heroicons.com/) - Tailwind Labs
+Este template é perfeito para:
+- 📊 Dashboards Analytics
+- 🏢 Painéis Administrativos
+- 📈 Aplicações SaaS
+- 💼 Sistemas Internos
+- 📱 Plataformas de Gestão
 
 ---
 
 ## 📞 Suporte
 
-Encontrou um bug ou tem uma sugestão?
-
-- 🐛 [Abra uma Issue](https://github.com/seu-usuario/ModeloDashboard/issues)
+- 🐛 [Issues](https://github.com/seu-usuario/ModeloDashboard/issues)
 - 💬 [Discussões](https://github.com/seu-usuario/ModeloDashboard/discussions)
-- 📧 Email: seu-email@exemplo.com
 
 ---
 
-## 🌟 Mostre seu apoio
+**Desenvolvido com Next.js 15, React 19, TypeScript, Tailwind CSS e shadcn/ui**
 
-Se este projeto foi útil, dê uma ⭐️!
-
----
-
-**Feito com ❤️ usando Next.js, React e TypeScript**
+Se este projeto foi útil, dê uma ⭐!

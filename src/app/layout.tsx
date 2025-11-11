@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Modelo Dashboard",
-  description: "Dashboard moderno com Next.js 15, React 19, Tailwind CSS e NextUI",
+  title: "Dashboard Whitelabel",
+  description: "Dashboard moderno com Next.js 15, React 19, Tailwind CSS e shadcn/ui",
 };
 
 export default function RootLayout({
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body>
+      <body className={inter.variable}>
         <Providers>{children}</Providers>
       </body>
     </html>
