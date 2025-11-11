@@ -7,7 +7,7 @@ import {
   Button,
   Divider,
   Chip
-} from "@nextui-org/react";
+} from "@heroui/react";
 import {
   ChartBarIcon,
   UsersIcon,
@@ -74,7 +74,7 @@ export default function Home() {
               Dashboard Modelo
             </h1>
             <p className="text-gray-300">
-              Next.js 15 + React 19 + Tailwind CSS + NextUI
+              Next.js 15 + React 19 + Tailwind CSS + HeroUI
             </p>
           </div>
           <Button
@@ -136,7 +136,7 @@ export default function Home() {
               <Chip color="primary" variant="flat">Next.js 15</Chip>
               <Chip color="secondary" variant="flat">React 19</Chip>
               <Chip color="success" variant="flat">Tailwind CSS 3.4</Chip>
-              <Chip color="warning" variant="flat">NextUI 2.4</Chip>
+              <Chip color="warning" variant="flat">HeroUI 2.6</Chip>
               <Chip color="danger" variant="flat">TypeScript 5.6</Chip>
               <Chip color="primary" variant="flat">Hero Icons 2.1</Chip>
             </div>
