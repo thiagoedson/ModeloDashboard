@@ -1,0 +1,11 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="transparent"/>
+  <!-- Dashboard Icon -->
+  <rect x="80" y="80" width="240" height="240" rx="40" fill="black" stroke="black" stroke-width="8"/>
+  <rect x="110" y="110" width="80" height="80" rx="12" fill="white"/>
+  <rect x="210" y="110" width="80" height="80" rx="12" fill="white"/>
+  <rect x="110" y="210" width="80" height="80" rx="12" fill="white"/>
+  <rect x="210" y="210" width="80" height="80" rx="12" fill="white"/>
+  <!-- Center accent -->
+  <circle cx="200" cy="200" r="30" fill="black"/>
+</svg>

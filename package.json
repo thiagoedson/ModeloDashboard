@@ -1,6 +1,6 @@
 {
   "name": "modelo-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base whitelabel moderna para dashboards e painéis administrativos com Next.js 15, React 19, TypeScript e HeroUI",
   "keywords": [
     "dashboard",
@@ -15,7 +15,7 @@
     "starter",
     "boilerplate"
   ],
-  "author": "Seu Nome <seu-email@exemplo.com>",
+  "author": "Thiago Edson <thiago.cassone@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
