@@ -1,6 +1,30 @@
 {
   "name": "modelo-dashboard",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Base whitelabel moderna para dashboards e painéis administrativos com Next.js 15, React 19, TypeScript e NextUI",
+  "keywords": [
+    "dashboard",
+    "template",
+    "whitelabel",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "nextui",
+    "admin-panel",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "Seu Nome <seu-email@exemplo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/ModeloDashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/ModeloDashboard/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/ModeloDashboard#readme",
   "private": true,
   "scripts": {
     "dev": "next dev",
