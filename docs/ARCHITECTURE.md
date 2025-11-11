@@ -27,7 +27,7 @@ O Modelo Dashboard é construído com uma arquitetura moderna e escalável, base
 - **React Server Components** - Renderização no servidor por padrão
 - **TypeScript** - Type safety em todo o código
 - **Tailwind CSS** - Utility-first CSS framework
-- **NextUI** - Sistema de componentes UI consistente
+- **HeroUI** - Sistema de componentes UI consistente
 
 ### Princípios Arquiteturais
 
@@ -67,7 +67,7 @@ O Modelo Dashboard é construído com uma arquitetura moderna e escalável, base
 
 ```
 ┌─────────────────┐     ┌─────────────────┐
-│  Tailwind CSS   │────▶│     NextUI      │
+│  Tailwind CSS   │────▶│     HeroUI      │
 │  (Utility CSS)  │     │  (Components)   │
 └─────────────────┘     └─────────────────┘
          │                       │
@@ -280,7 +280,7 @@ export default function Page() {
 ### 5.1 Hierarquia de Componentes
 
 ```
-NextUIProvider
+HeroUIProvider
     │
     ├── Card (Container)
     │   ├── CardHeader
@@ -290,7 +290,7 @@ NextUIProvider
     ├── Button
     ├── Chip
     ├── Divider
-    └── ... (outros componentes NextUI)
+    └── ... (outros componentes HeroUI)
 ```
 
 ### 5.2 Sistema de Cores
@@ -351,16 +351,16 @@ Para estado compartilhado (ex: tema):
 // /src/app/providers.tsx
 'use client';
 
-import { NextUIProvider } from '@nextui-org/react';
+import { HeroUIProvider } from '@heroui/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 export function Providers({ children }) {
   return (
-    <NextUIProvider>
+    <HeroUIProvider>
       <NextThemesProvider attribute="class" defaultTheme="dark">
         {children}
       </NextThemesProvider>
-    </NextUIProvider>
+    </HeroUIProvider>
   );
 }
 ```
@@ -444,7 +444,7 @@ Foco nas Core Web Vitals:
 ✅ API Routes integradas
 ✅ Streaming e Suspense
 
-### 8.2 Por que NextUI?
+### 8.2 Por que HeroUI?
 
 ✅ Componentes modernos e bonitos
 ✅ Acessibilidade built-in (WAI-ARIA)
@@ -503,7 +503,7 @@ type ButtonProps = { }
 ```typescript
 // 1. Imports externos (React, bibliotecas)
 import { useState } from 'react';
-import { Card } from '@nextui-org/react';
+import { Card } from '@heroui/react';
 
 // 2. Imports internos (seus componentes/utils)
 import { StatCard } from '@/components/StatCard';
@@ -521,7 +521,7 @@ import './styles.css';
 ```typescript
 // 1. Imports
 import { useState } from 'react';
-import { Card } from '@nextui-org/react';
+import { Card } from '@heroui/react';
 import type { ComponentProps } from '@/types';
 
 // 2. Types/Interfaces
@@ -616,7 +616,7 @@ Fácil adicionar:
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
-- [NextUI Documentation](https://nextui.org/docs)
+- [HeroUI Documentation](https://heroui.com/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 
@@ -649,7 +649,7 @@ Fácil adicionar:
                       │
                       ▼
 ┌─────────────────────────────────────────────────┐
-│               NextUI Components                 │
+│               HeroUI Components                 │
 │  (Card, Button, Chip, etc)                      │
 └─────────────────────────────────────────────────┘
                       │

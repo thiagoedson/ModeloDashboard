@@ -17,15 +17,15 @@ Este guia documenta todos os componentes disponíveis no projeto e como utilizá
 
 ---
 
-## 1. Componentes NextUI
+## 1. Componentes HeroUI
 
-O projeto usa [NextUI v2](https://nextui.org/) como biblioteca de componentes base.
+O projeto usa [HeroUI v2](https://heroui.com/) como biblioteca de componentes base.
 
 ### 1.1 Card
 
 **Importação:**
 ```typescript
-import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/react';
+import { Card, CardHeader, CardBody, CardFooter } from '@heroui/react';
 ```
 
 **Uso Básico:**
@@ -96,7 +96,7 @@ import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/react';
 
 **Importação:**
 ```typescript
-import { Button } from '@nextui-org/react';
+import { Button } from '@heroui/react';
 ```
 
 **Uso Básico:**
@@ -156,7 +156,7 @@ import { PlusIcon } from '@heroicons/react/24/solid';
 
 **Importação:**
 ```typescript
-import { Divider } from '@nextui-org/react';
+import { Divider } from '@heroui/react';
 ```
 
 **Uso:**
@@ -179,7 +179,7 @@ import { Divider } from '@nextui-org/react';
 
 **Importação:**
 ```typescript
-import { Chip } from '@nextui-org/react';
+import { Chip } from '@heroui/react';
 ```
 
 **Uso Básico:**
@@ -246,7 +246,7 @@ import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid';
 **Estrutura atual do projeto:**
 
 ```typescript
-import { Card, CardBody, Chip } from '@nextui-org/react';
+import { Card, CardBody, Chip } from '@heroui/react';
 import { BanknotesIcon, ArrowUpIcon } from '@heroicons/react/24/solid';
 
 <Card className="backdrop-blur-md bg-white/70 dark:bg-gray-800/70 border border-gray-200/50 dark:border-gray-700/50 shadow-xl">
@@ -285,7 +285,7 @@ import { BanknotesIcon, ArrowUpIcon } from '@heroicons/react/24/solid';
 **Criar em `/src/components/StatCard.tsx`:**
 
 ```typescript
-import { Card, CardBody, Chip } from '@nextui-org/react';
+import { Card, CardBody, Chip } from '@heroui/react';
 import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid';
 
 interface StatCardProps {
@@ -394,7 +394,7 @@ import { BanknotesIcon, UsersIcon, ShoppingCartIcon } from '@heroicons/react/24/
 'use client';
 
 import { useTheme } from 'next-themes';
-import { Button } from '@nextui-org/react';
+import { Button } from '@heroui/react';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 import { useEffect, useState } from 'react';
 
@@ -563,7 +563,7 @@ import { HomeIcon, UserIcon, CogIcon } from '@heroicons/react/20/solid';
 ### 6.1 Chips de Status
 
 ```typescript
-import { Chip } from '@nextui-org/react';
+import { Chip } from '@heroui/react';
 
 // Status ativo
 <Chip color="success" variant="flat">Ativo</Chip>
@@ -581,7 +581,7 @@ import { Chip } from '@nextui-org/react';
 ### 6.2 Chips de Trend
 
 ```typescript
-import { Chip } from '@nextui-org/react';
+import { Chip } from '@heroui/react';
 import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/24/solid';
 
 // Trend positivo
@@ -697,7 +697,7 @@ export default function MeuComponente({
 
 ```typescript
 // /src/components/MetricCard.tsx
-import { Card, CardBody } from '@nextui-org/react';
+import { Card, CardBody } from '@heroui/react';
 
 interface MetricCardProps {
   label: string;
@@ -744,7 +744,7 @@ export default function MetricCard({
 
 ## 📚 Recursos
 
-- [NextUI Components](https://nextui.org/docs/components/accordion)
+- [HeroUI Components](https://heroui.com/docs/components/accordion)
 - [Hero Icons](https://heroicons.com/)
 - [Tailwind CSS Utility Classes](https://tailwindcss.com/docs/utility-first)
 
