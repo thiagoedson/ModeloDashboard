@@ -63,6 +63,12 @@ export const mockMenuItems: MenuItem[] = [
     badge: 5,
   },
   {
+    id: "7",
+    label: "Componentes",
+    icon: "component",
+    href: "/dashboard/components",
+  },
+  {
     id: "5",
     label: "Relatórios",
     icon: "bar-chart",

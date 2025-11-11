@@ -11,6 +11,7 @@ import {
   ShoppingCart,
   BarChart,
   Settings,
+  Component,
   LucideIcon,
 } from "lucide-react";
 
@@ -21,6 +22,7 @@ const iconMap: Record<string, LucideIcon> = {
   "shopping-cart": ShoppingCart,
   "bar-chart": BarChart,
   settings: Settings,
+  component: Component,
 };
 
 export function Sidebar() {
