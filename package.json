@@ -1,5 +1,5 @@
 {
-  "name": "modelo-dashboard",
+    "name": "modelo-dashboard-v2",
   "version": "1.0.1",
   "description": "Base whitelabel moderna para dashboards e painéis administrativos com Next.js 15, React 19, TypeScript e HeroUI",
   "keywords": [
