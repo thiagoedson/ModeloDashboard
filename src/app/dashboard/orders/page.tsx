@@ -216,19 +216,19 @@ export default function OrdersPage() {
       title: "Em Processamento",
       value: orders.filter((o) => o.status === "processing").length.toString(),
       icon: Clock,
-      iconColor: "text-yellow-500",
+      iconColor: "text-warning",
     },
     {
       title: "Enviados",
       value: orders.filter((o) => o.status === "shipped").length.toString(),
       icon: TrendingUp,
-      iconColor: "text-blue-500",
+      iconColor: "text-info",
     },
     {
       title: "Entregues",
       value: orders.filter((o) => o.status === "delivered").length.toString(),
       icon: CheckCircle2,
-      iconColor: "text-green-500",
+      iconColor: "text-success",
     },
   ];
 

@@ -72,10 +72,10 @@ const topProducts = [
 ];
 
 const categoryData = [
-  { name: "Eletrônicos", value: 45, color: "bg-blue-500" },
-  { name: "Computadores", value: 30, color: "bg-purple-500" },
-  { name: "Smartphones", value: 15, color: "bg-pink-500" },
-  { name: "Acessórios", value: 10, color: "bg-green-500" },
+  { name: "Eletrônicos", value: 45, color: "bg-info" },
+  { name: "Computadores", value: 30, color: "bg-primary" },
+  { name: "Smartphones", value: 15, color: "bg-warning" },
+  { name: "Acessórios", value: 10, color: "bg-success" },
 ];
 
 export default function ReportsPage() {
@@ -94,21 +94,21 @@ export default function ReportsPage() {
       value: "1.234",
       icon: ShoppingCart,
       trend: { value: 8.2, isPositive: true },
-      iconColor: "text-blue-500",
+      iconColor: "text-info",
     },
     {
       title: "Novos Clientes",
       value: "342",
       icon: Users,
       trend: { value: 15.3, isPositive: true },
-      iconColor: "text-purple-500",
+      iconColor: "text-primary",
     },
     {
       title: "Taxa de Conversão",
       value: "3.2%",
       icon: Activity,
       trend: { value: 2.1, isPositive: false },
-      iconColor: "text-pink-500",
+      iconColor: "text-warning",
     },
   ];
 
@@ -378,8 +378,8 @@ export default function ReportsPage() {
                     <div
                       className={`flex items-center justify-end gap-1 text-sm font-semibold ${
                         product.growth >= 0
-                          ? "text-green-600"
-                          : "text-red-600"
+                          ? "text-success"
+                          : "text-error"
                       }`}
                     >
                       {product.growth >= 0 ? (
@@ -415,21 +415,21 @@ export default function ReportsPage() {
                   value: "Dezembro",
                   metric: "R$ 95.000",
                   icon: TrendingUp,
-                  color: "text-green-500",
+                  color: "text-success",
                 },
                 {
                   title: "Crescimento Médio",
                   value: "+9.2%",
                   metric: "mês a mês",
                   icon: Activity,
-                  color: "text-blue-500",
+                  color: "text-info",
                 },
                 {
                   title: "Ticket Médio",
                   value: "R$ 639",
                   metric: "por venda",
                   icon: DollarSign,
-                  color: "text-purple-500",
+                  color: "text-primary",
                 },
               ].map((insight, index) => (
                 <motion.div

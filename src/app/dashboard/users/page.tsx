@@ -95,19 +95,19 @@ export default function UsersPage() {
       title: "Administradores",
       value: mockUsers.filter((u) => u.role === "admin").length.toString(),
       icon: Shield,
-      iconColor: "text-red-500",
+      iconColor: "text-destructive",
     },
     {
       title: "Gerentes",
       value: mockUsers.filter((u) => u.role === "manager").length.toString(),
       icon: UsersIcon,
-      iconColor: "text-blue-500",
+      iconColor: "text-info",
     },
     {
       title: "Usuários Comuns",
       value: mockUsers.filter((u) => u.role === "user").length.toString(),
       icon: User,
-      iconColor: "text-green-500",
+      iconColor: "text-success",
     },
   ];
 
@@ -257,7 +257,7 @@ export default function UsersPage() {
                               .toUpperCase()}
                           </AvatarFallback>
                         </Avatar>
-                        <div className="absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-green-500 ring-2 ring-card" />
+                        <div className="absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-success ring-2 ring-card" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <CardTitle className="text-lg truncate group-hover:text-primary transition-colors duration-200">

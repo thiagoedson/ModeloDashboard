@@ -35,7 +35,7 @@ export default function DashboardPage() {
         {mockDashboardStats.map((stat) => {
           const Icon = iconMap[stat.icon] || TrendingUp;
           const TrendIcon = stat.trend === "up" ? ArrowUpRight : ArrowDownRight;
-          const trendColor = stat.trend === "up" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400";
+          const trendColor = stat.trend === "up" ? "text-success" : "text-error";
 
           return (
             <Card key={stat.id} className="hover:shadow-lg transition-shadow">
