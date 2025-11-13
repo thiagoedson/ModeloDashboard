@@ -258,7 +258,7 @@ export default function SettingsPage() {
                   ].map((session, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-between p-3 rounded-lg bg-muted/50 border border-border/50"
+                      className="flex items-center justify-between p-3 rounded-lg bg-muted/50 "
                     >
                       <div>
                         <p className="font-medium flex items-center gap-2">
@@ -325,7 +325,7 @@ export default function SettingsPage() {
                   ].map((notification, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-between p-4 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-200 hover:bg-card hover:shadow-md"
+                      className="flex items-center justify-between p-4 rounded-lg  bg-card/50 backdrop-blur-sm transition-all duration-200 hover:bg-card hover:shadow-md"
                     >
                       <div className="space-y-1">
                         <p className="font-medium">{notification.title}</p>
@@ -415,7 +415,7 @@ export default function SettingsPage() {
                   <CardTitle>Preview</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="p-6 rounded-lg border border-border/50 bg-muted/30 space-y-4">
+                  <div className="p-6 rounded-lg  bg-muted/30 space-y-4">
                     <div className="flex items-center gap-3">
                       <div className="h-12 w-12 rounded-full bg-primary" />
                       <div className="space-y-1">

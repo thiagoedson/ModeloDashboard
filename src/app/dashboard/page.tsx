@@ -88,19 +88,19 @@ export default function DashboardPage() {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 gap-4">
-              <button className="p-4 border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors text-left">
+              <button className="p-4 rounded-lg bg-muted/50 hover:bg-accent hover:text-accent-foreground transition-colors text-left">
                 <Users className="h-5 w-5 mb-2" />
                 <p className="text-sm font-medium">Novo Usuário</p>
               </button>
-              <button className="p-4 border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors text-left">
+              <button className="p-4 rounded-lg bg-muted/50 hover:bg-accent hover:text-accent-foreground transition-colors text-left">
                 <ShoppingCart className="h-5 w-5 mb-2" />
                 <p className="text-sm font-medium">Nova Venda</p>
               </button>
-              <button className="p-4 border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors text-left">
+              <button className="p-4 rounded-lg bg-muted/50 hover:bg-accent hover:text-accent-foreground transition-colors text-left">
                 <DollarSign className="h-5 w-5 mb-2" />
                 <p className="text-sm font-medium">Relatório</p>
               </button>
-              <button className="p-4 border rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors text-left">
+              <button className="p-4 rounded-lg bg-muted/50 hover:bg-accent hover:text-accent-foreground transition-colors text-left">
                 <TrendingUp className="h-5 w-5 mb-2" />
                 <p className="text-sm font-medium">Análise</p>
               </button>

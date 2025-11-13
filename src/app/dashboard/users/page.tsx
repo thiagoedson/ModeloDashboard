@@ -242,12 +242,12 @@ export default function UsersPage() {
           const RoleIcon = roleConfig[user.role].icon;
           return (
             <motion.div key={user.id} variants={itemVariants}>
-              <Card className="group hover:shadow-sm transition-all duration-300 hover:scale-[1.02] border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm">
+              <Card className="group hover:shadow-sm transition-all duration-300 hover:scale-[1.02] border-muted bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4 flex-1">
                       <div className="relative">
-                        <Avatar className="h-14 w-14 ring-2 ring-border/50 group-hover:ring-primary transition-all duration-300">
+                        <Avatar className="h-14 w-14 ring-2 ring-muted group-hover:ring-primary transition-all duration-300">
                           <AvatarImage src={user.avatar} alt={user.name} />
                           <AvatarFallback className="bg-primary/10 text-primary font-semibold">
                             {user.name
@@ -310,7 +310,7 @@ export default function UsersPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-border/50">
+                  <div className="flex items-center justify-between pt-4 ">
                     <Badge
                       variant={roleConfig[user.role].variant}
                       className="gap-1"

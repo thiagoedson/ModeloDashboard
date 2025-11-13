@@ -220,7 +220,7 @@ export default function ReportsPage() {
                 </div>
 
                 {/* Legend */}
-                <div className="flex items-center justify-between pt-4 border-t border-border/50">
+                <div className="flex items-center justify-between pt-4 ">
                   <div className="flex items-center gap-2">
                     <div className="h-3 w-3 rounded-full bg-primary" />
                     <span className="text-sm text-muted-foreground">
@@ -313,7 +313,7 @@ export default function ReportsPage() {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                      className="flex items-center justify-between p-3 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 transition-colors duration-200"
+                      className="flex items-center justify-between p-3 rounded-lg bg-muted/30  hover:bg-muted/50 transition-colors duration-200"
                     >
                       <div className="flex items-center gap-3">
                         <div
@@ -354,7 +354,7 @@ export default function ReportsPage() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-gradient-to-r from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 rounded-lg  bg-gradient-to-r from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
                 >
                   <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary font-bold text-lg group-hover:bg-primary/20 transition-colors duration-200">
                     {index + 1}
@@ -437,7 +437,7 @@ export default function ReportsPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                  className="p-6 rounded-lg border border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
+                  className="p-6 rounded-lg  bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
                 >
                   <div className="flex items-start justify-between">
                     <div>

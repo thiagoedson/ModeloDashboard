@@ -53,7 +53,7 @@ const PaginationLink = ({
       "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 w-9 cursor-pointer",
       isActive
         ? "bg-primary text-primary-foreground"
-        : "bg-card hover:bg-accent border text-foreground",
+        : "bg-card hover:bg-accent text-foreground",
       className
     )}
     {...props}

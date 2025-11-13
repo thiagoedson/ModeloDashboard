@@ -532,7 +532,7 @@ export default function ComponentsPage() {
                         </DialogDescription>
                       </DialogHeader>
                       <div className="py-4">
-                        <div className="flex items-center gap-3 p-4 rounded-lg bg-destructive/10 border border-destructive/20">
+                        <div className="flex items-center gap-3 p-4 rounded-lg bg-destructive/10">
                           <AlertCircle className="h-5 w-5 text-destructive" />
                           <p className="text-sm font-medium">
                             Atenção: Esta é uma ação permanente
