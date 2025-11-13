@@ -35,9 +35,9 @@ export function Header() {
   };
 
   return (
-    <header className="h-16 border-b bg-card px-6 flex items-center justify-between sticky top-0 z-10">
+    <header className="h-16 border-b border-gray-200 bg-white px-6 flex items-center justify-between sticky top-0 z-10 shadow-sm">
       <div className="flex items-center gap-4">
-        <h1 className="text-xl font-semibold">Bem-vindo, {user?.name?.split(" ")[0] || "Usuário"}</h1>
+        <h1 className="text-xl font-semibold text-gray-900">Bem-vindo, {user?.name?.split(" ")[0] || "Usuário"}</h1>
       </div>
 
       <div className="flex items-center gap-4">
@@ -68,7 +68,7 @@ export function Header() {
             <DropdownMenuLabel>
               <div className="flex flex-col space-y-1">
                 <p className="text-sm font-medium leading-none">{user?.name}</p>
-                <p className="text-xs leading-none text-muted-foreground">
+                <p className="text-xs leading-none text-gray-600">
                   {user?.email}
                 </p>
               </div>

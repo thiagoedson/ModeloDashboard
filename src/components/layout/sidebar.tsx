@@ -29,11 +29,11 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 border-r bg-card h-screen sticky top-0 flex flex-col">
+    <aside className="w-64 border-r border-gray-200 bg-white h-screen sticky top-0 flex flex-col shadow-sm">
       {/* Logo */}
-      <div className="p-6 border-b">
-        <h2 className="text-2xl font-bold">Dashboard</h2>
-        <p className="text-sm text-muted-foreground">Sistema de Gestão</p>
+      <div className="p-6 border-b border-gray-200">
+        <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
+        <p className="text-sm text-gray-600">Sistema de Gestão</p>
       </div>
 
       {/* Navigation */}
@@ -49,8 +49,8 @@ export function Sidebar() {
               className={cn(
                 "flex items-center gap-3 px-4 py-3 rounded-lg transition-colors relative group",
                 isActive
-                  ? "bg-primary text-primary-foreground"
-                  : "hover:bg-accent hover:text-accent-foreground"
+                  ? "bg-gray-900 text-white"
+                  : "text-gray-700 hover:bg-gray-100"
               )}
             >
               <Icon className="h-5 w-5" />
@@ -59,8 +59,8 @@ export function Sidebar() {
                 <span className={cn(
                   "ml-auto px-2 py-0.5 text-xs rounded-full font-semibold",
                   isActive
-                    ? "bg-primary-foreground text-primary"
-                    : "bg-primary text-primary-foreground"
+                    ? "bg-white text-gray-900"
+                    : "bg-gray-900 text-white"
                 )}>
                   {item.badge}
                 </span>
@@ -71,7 +71,7 @@ export function Sidebar() {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t text-xs text-muted-foreground">
+      <div className="p-4 border-t border-gray-200 text-xs text-gray-600">
         <p>&copy; 2025 Dashboard</p>
       </div>
     </aside>

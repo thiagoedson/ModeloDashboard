@@ -50,10 +50,10 @@ const PaginationLink = ({
   <a
     aria-current={isActive ? "page" : undefined}
     className={cn(
-      "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 w-9 cursor-pointer",
+      "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 w-9 cursor-pointer",
       isActive
-        ? "bg-primary text-primary-foreground shadow-lg hover:bg-primary/90"
-        : "bg-card/50 backdrop-blur-sm hover:bg-card hover:shadow-md border border-border/50",
+        ? "bg-gray-900 text-white shadow-lg hover:bg-gray-800"
+        : "bg-white hover:bg-gray-50 hover:shadow-md border border-gray-200 text-gray-900",
       className
     )}
     {...props}
@@ -102,7 +102,7 @@ const PaginationEllipsis = ({
     className={cn("flex h-9 w-9 items-center justify-center", className)}
     {...props}
   >
-    <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
+    <MoreHorizontal className="h-4 w-4 text-gray-500" />
     <span className="sr-only">More pages</span>
   </span>
 )
