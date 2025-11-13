@@ -41,8 +41,8 @@ const StatCard = React.forwardRef<HTMLDivElement, StatCardProps>(
                   className={cn(
                     "text-sm font-semibold flex items-center gap-1 px-2 py-0.5 rounded-full",
                     trend.isPositive
-                      ? "text-green-600 bg-green-500/10"
-                      : "text-red-600 bg-red-500/10"
+                      ? "text-success bg-success/10"
+                      : "text-error bg-error/10"
                   )}
                 >
                   {trend.isPositive ? "↑" : "↓"} {Math.abs(trend.value)}%

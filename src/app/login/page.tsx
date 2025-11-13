@@ -50,10 +50,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center gap-8">
         {/* Metallic Paint Animation */}
-        <div className="hidden lg:block lg:w-1/2 h-[600px] rounded-2xl overflow-hidden border-2 border-gray-200 bg-white/50 shadow-lg">
+        <div className="hidden lg:block lg:w-1/2 h-[600px] rounded-2xl overflow-hidden border-2 bg-card/50 shadow-lg">
           {imageData && (
             <MetallicPaint 
               imageData={imageData} 
@@ -73,8 +73,8 @@ export default function LoginPage() {
         <div className="w-full lg:w-1/2 max-w-md">
           {/* Logo/Brand */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold mb-2 text-gray-900">Dashboard</h1>
-            <p className="text-gray-600">Sistema de Gerenciamento</p>
+            <h1 className="text-4xl font-bold mb-2 text-foreground">Dashboard</h1>
+            <p className="text-muted-foreground">Sistema de Gerenciamento</p>
           </div>
 
           {/* Login Card */}

@@ -182,19 +182,19 @@ export default function ProductsPage() {
         minimumFractionDigits: 0,
       }).format(totalValue),
       icon: TrendingUp,
-      iconColor: "text-green-500",
+      iconColor: "text-success",
     },
     {
       title: "Unidades Totais",
       value: totalStock.toString(),
       icon: Package,
-      iconColor: "text-blue-500",
+      iconColor: "text-info",
     },
     {
       title: "Categorias",
       value: categories.length.toString(),
       icon: Filter,
-      iconColor: "text-purple-500",
+      iconColor: "text-primary",
     },
   ];
 
@@ -392,7 +392,7 @@ export default function ProductsPage() {
                       </TableCell>
                       <TableCell className="text-right">
                         <div className="flex items-center justify-end gap-1">
-                          <TrendingUp className="h-4 w-4 text-green-500" />
+                          <TrendingUp className="h-4 w-4 text-success" />
                           <span className="font-medium">{product.sales}</span>
                         </div>
                       </TableCell>

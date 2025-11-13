@@ -22,6 +22,16 @@
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
     --radius: 0.5rem;
+
+    /* Semantic colors for status */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 3.9%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+    --error: 0 84.2% 60.2%;
+    --error-foreground: 0 0% 98%;
   }
 
   .dark {
@@ -44,6 +54,16 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+
+    /* Semantic colors for status (dark mode) */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 3.9%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+    --error: 0 62.8% 30.6%;
+    --error-foreground: 0 0% 98%;
   }
 }
 

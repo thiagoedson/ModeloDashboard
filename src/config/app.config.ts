@@ -68,20 +68,21 @@ export const appConfig = {
    */
   theme: {
     // Tema padrão ('light' ou 'dark')
-    defaultTheme: 'dark' as 'light' | 'dark',
+    defaultTheme: 'light' as 'light' | 'dark',
 
     // Permitir troca de tema
     enableThemeToggle: true,
 
-    // Cores principais (em formato HSL ou RGB)
+    // Cores principais (definidas em globals.css usando variáveis CSS)
+    // Os valores abaixo são apenas para referência
     colors: {
-      primary: '#6366f1',     // Azul índigo
-      secondary: '#8b5cf6',   // Roxo
-      accent: '#ec4899',      // Rosa
-      success: '#10b981',     // Verde
-      warning: '#f59e0b',     // Amarelo
-      error: '#ef4444',       // Vermelho
-      info: '#3b82f6',        // Azul
+      primary: 'hsl(0 0% 9%)',           // Definido em --primary
+      secondary: 'hsl(0 0% 96.1%)',      // Definido em --secondary
+      accent: 'hsl(0 0% 96.1%)',         // Definido em --accent
+      success: 'hsl(142 76% 36%)',       // Definido em --success
+      warning: 'hsl(38 92% 50%)',        // Definido em --warning
+      error: 'hsl(0 84.2% 60.2%)',       // Definido em --error
+      info: 'hsl(217 91% 60%)',          // Definido em --info
     },
 
     // Gradiente de fundo
@@ -216,12 +217,12 @@ export const appConfig = {
 
     // Tecnologias para mostrar no welcome card
     technologies: [
-      { name: 'Next.js', version: '15' },
-      { name: 'React', version: '19' },
-      { name: 'Tailwind CSS', version: '3.4' },
-      { name: 'NextUI', version: '2.4' },
-      { name: 'TypeScript', version: '5.6' },
-      { name: 'Hero Icons', version: '2.1' },
+      { name: 'Next.js', version: '16.0' },
+      { name: 'React', version: '19.2' },
+      { name: 'Tailwind CSS', version: '4.1' },
+      { name: 'shadcn/ui', version: 'latest' },
+      { name: 'TypeScript', version: '5.9' },
+      { name: 'Lucide Icons', version: '0.553' },
     ],
   },
 
