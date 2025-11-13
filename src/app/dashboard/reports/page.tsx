@@ -146,7 +146,7 @@ export default function ReportsPage() {
             <Filter className="h-4 w-4" />
             Filtros
           </Button>
-          <Button className="gap-2 shadow-lg hover:shadow-xl transition-all duration-300">
+          <Button className="gap-2 shadow-sm transition-all duration-300">
             <Download className="h-4 w-4" />
             Exportar
           </Button>
@@ -204,9 +204,9 @@ export default function ReportsPage() {
                             initial={{ height: 0 }}
                             animate={{ height: `${heightPercentage}%` }}
                             transition={{ duration: 1, delay: index * 0.05 }}
-                            className="w-full bg-gradient-to-t from-primary to-primary/60 rounded-t-lg transition-all duration-300 hover:from-primary hover:to-primary/80 cursor-pointer shadow-lg hover:shadow-xl relative group-hover:scale-105"
+                            className="w-full bg-gradient-to-t from-primary to-primary/60 rounded-t-lg transition-all duration-300 hover:from-primary hover:to-primary/80 cursor-pointer shadow-sm relative group-hover:scale-105"
                           >
-                            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-foreground text-background text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap font-semibold shadow-lg">
+                            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-foreground text-background text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap font-semibold shadow-sm">
                               R$ {(data.value / 1000).toFixed(0)}k
                             </div>
                           </motion.div>
@@ -317,7 +317,7 @@ export default function ReportsPage() {
                     >
                       <div className="flex items-center gap-3">
                         <div
-                          className={`w-4 h-4 rounded-full ${category.color} shadow-lg`}
+                          className={`w-4 h-4 rounded-full ${category.color} shadow-sm`}
                         />
                         <span className="font-medium">{category.name}</span>
                       </div>
@@ -354,7 +354,7 @@ export default function ReportsPage() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-gradient-to-r from-card/80 to-card/40 backdrop-blur-sm hover:shadow-lg transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-gradient-to-r from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
                 >
                   <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary font-bold text-lg group-hover:bg-primary/20 transition-colors duration-200">
                     {index + 1}
@@ -437,7 +437,7 @@ export default function ReportsPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                  className="p-6 rounded-lg border border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-lg transition-all duration-300 group"
+                  className="p-6 rounded-lg border border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-sm transition-all duration-300 group"
                 >
                   <div className="flex items-start justify-between">
                     <div>

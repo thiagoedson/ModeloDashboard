@@ -580,7 +580,7 @@ export default function ComponentsPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3, delay: 0.4 + index * 0.05 }}
-                  className={`${color.class} ${color.textClass} p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer`}
+                  className={`${color.class} ${color.textClass} p-6 rounded-lg shadow-sm transition-all duration-300 hover:scale-105 cursor-pointer`}
                 >
                   <p className="font-semibold text-lg">{color.name}</p>
                   <p className="text-sm opacity-80 mt-1">Clique para copiar</p>

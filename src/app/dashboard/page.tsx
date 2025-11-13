@@ -38,7 +38,7 @@ export default function DashboardPage() {
           const trendColor = stat.trend === "up" ? "text-success" : "text-error";
 
           return (
-            <Card key={stat.id} className="hover:shadow-lg transition-shadow">
+            <Card key={stat.id} className="hover:shadow-sm transition-all">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
                   {stat.title}

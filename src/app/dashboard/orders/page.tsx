@@ -259,7 +259,7 @@ export default function OrdersPage() {
             <Filter className="h-4 w-4" />
             Filtros
           </Button>
-          <Button className="gap-2 shadow-lg hover:shadow-xl transition-all duration-300">
+          <Button className="gap-2 shadow-sm transition-all duration-300">
             <Download className="h-4 w-4" />
             Exportar
           </Button>

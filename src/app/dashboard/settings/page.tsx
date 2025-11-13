@@ -75,7 +75,7 @@ export default function SettingsPage() {
         </div>
         <Button
           onClick={handleSave}
-          className="gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="gap-2 shadow-sm transition-all duration-300"
         >
           <Save className="h-4 w-4" />
           {saved ? "Salvo!" : "Salvar Alterações"}
@@ -385,7 +385,7 @@ export default function SettingsPage() {
                       ].map((colorOption) => (
                         <button
                           key={colorOption.name}
-                          className={`${colorOption.color} h-12 rounded-lg transition-all duration-200 hover:scale-110 hover:shadow-lg ring-2 ring-transparent hover:ring-ring focus:ring-ring`}
+                          className={`${colorOption.color} h-12 rounded-lg transition-all duration-200 hover:scale-110 hover:shadow-sm ring-2 ring-transparent hover:ring-ring focus:ring-ring`}
                           aria-label={colorOption.name}
                         />
                       ))}

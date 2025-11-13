@@ -218,7 +218,7 @@ export default function ProductsPage() {
         <div className="flex gap-2">
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
-              <Button className="gap-2 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="gap-2 shadow-sm transition-all duration-300">
                 <Plus className="h-4 w-4" />
                 Novo Produto
               </Button>

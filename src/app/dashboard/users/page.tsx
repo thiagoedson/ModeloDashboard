@@ -131,7 +131,7 @@ export default function UsersPage() {
         <div className="flex gap-2">
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
-              <Button className="gap-2 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="gap-2 shadow-sm transition-all duration-300">
                 <UserPlus className="h-4 w-4" />
                 Novo Usuário
               </Button>
@@ -242,7 +242,7 @@ export default function UsersPage() {
           const RoleIcon = roleConfig[user.role].icon;
           return (
             <motion.div key={user.id} variants={itemVariants}>
-              <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm">
+              <Card className="group hover:shadow-sm transition-all duration-300 hover:scale-[1.02] border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4 flex-1">
