@@ -573,7 +573,10 @@ export default function ComponentsPage() {
                 { name: "Muted", class: "bg-muted", textClass: "text-muted-foreground" },
                 { name: "Accent", class: "bg-accent", textClass: "text-accent-foreground" },
                 { name: "Destructive", class: "bg-destructive", textClass: "text-destructive-foreground" },
-                { name: "Success", class: "bg-green-500", textClass: "text-white" },
+                { name: "Success", class: "bg-success", textClass: "text-success-foreground" },
+                { name: "Warning", class: "bg-warning", textClass: "text-warning-foreground" },
+                { name: "Info", class: "bg-info", textClass: "text-info-foreground" },
+                { name: "Error", class: "bg-error", textClass: "text-error-foreground" },
               ].map((color, index) => (
                 <motion.div
                   key={index}
