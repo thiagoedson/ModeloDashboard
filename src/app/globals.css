@@ -37,19 +37,19 @@
     --color-destructive: 0 84.2% 60.2%;
     --color-destructive-foreground: 0 0% 98%;
 
-    /* Success colors */
+    /* Success colors - Verde */
     --color-success: 142 76% 36%;
     --color-success-foreground: 0 0% 98%;
 
-    /* Warning colors */
+    /* Warning colors - Amarelo */
     --color-warning: 38 92% 50%;
     --color-warning-foreground: 0 0% 3.9%;
 
-    /* Info colors */
+    /* Info colors - Azul */
     --color-info: 217 91% 60%;
     --color-info-foreground: 0 0% 98%;
 
-    /* Error colors */
+    /* Error colors - Vermelho */
     --color-error: 0 84.2% 60.2%;
     --color-error-foreground: 0 0% 98%;
 
@@ -93,19 +93,19 @@
     --color-destructive: 0 62.8% 30.6%;
     --color-destructive-foreground: 0 0% 98%;
 
-    /* Success colors */
+    /* Success colors - Verde (dark mode) */
     --color-success: 142 70% 45%;
     --color-success-foreground: 0 0% 98%;
 
-    /* Warning colors */
+    /* Warning colors - Amarelo (dark mode) */
     --color-warning: 38 92% 50%;
     --color-warning-foreground: 0 0% 3.9%;
 
-    /* Info colors */
+    /* Info colors - Azul (dark mode) */
     --color-info: 217 91% 60%;
     --color-info-foreground: 0 0% 98%;
 
-    /* Error colors */
+    /* Error colors - Vermelho (dark mode) */
     --color-error: 0 62.8% 30.6%;
     --color-error-foreground: 0 0% 98%;
   }
@@ -119,5 +119,47 @@
   body {
     background-color: hsl(var(--color-background));
     color: hsl(var(--color-foreground));
+  }
+}
+
+/* Classes auxiliares para opacidade - necessário para Tailwind v4 */
+@layer utilities {
+  .bg-success\/10 {
+    background-color: hsl(var(--color-success) / 0.1);
+  }
+  .bg-success\/80 {
+    background-color: hsl(var(--color-success) / 0.8);
+  }
+  .bg-warning\/10 {
+    background-color: hsl(var(--color-warning) / 0.1);
+  }
+  .bg-warning\/80 {
+    background-color: hsl(var(--color-warning) / 0.8);
+  }
+  .bg-info\/10 {
+    background-color: hsl(var(--color-info) / 0.1);
+  }
+  .bg-info\/80 {
+    background-color: hsl(var(--color-info) / 0.8);
+  }
+  .bg-error\/10 {
+    background-color: hsl(var(--color-error) / 0.1);
+  }
+  .bg-error\/80 {
+    background-color: hsl(var(--color-error) / 0.8);
+  }
+
+  /* Shadow colors */
+  .shadow-success\/20 {
+    box-shadow: 0 4px 6px -1px hsl(var(--color-success) / 0.2);
+  }
+  .shadow-warning\/20 {
+    box-shadow: 0 4px 6px -1px hsl(var(--color-warning) / 0.2);
+  }
+  .shadow-info\/20 {
+    box-shadow: 0 4px 6px -1px hsl(var(--color-info) / 0.2);
+  }
+  .shadow-destructive\/20 {
+    box-shadow: 0 4px 6px -1px hsl(var(--color-destructive) / 0.2);
   }
 }
