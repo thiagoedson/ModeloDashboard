@@ -1,165 +1,119 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    /* Base colors - Light mode */
-    --color-background: 0 0% 100%;
-    --color-foreground: 0 0% 3.9%;
-    --color-border: 0 0% 89.8%;
-    --color-input: 0 0% 89.8%;
-    --color-ring: 0 0% 3.9%;
+:root {
+  /* Base colors - Light mode */
+  --color-background: 0 0% 100%;
+  --color-foreground: 0 0% 3.9%;
+  --color-border: 0 0% 89.8%;
+  --color-input: 0 0% 89.8%;
+  --color-ring: 0 0% 3.9%;
 
-    /* Card colors */
-    --color-card: 0 0% 100%;
-    --color-card-foreground: 0 0% 3.9%;
+  /* Card colors */
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 0 0% 3.9%;
 
-    /* Popover colors */
-    --color-popover: 0 0% 100%;
-    --color-popover-foreground: 0 0% 3.9%;
+  /* Popover colors */
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 0 0% 3.9%;
 
-    /* Primary colors */
-    --color-primary: 0 0% 9%;
-    --color-primary-foreground: 0 0% 98%;
+  /* Primary colors */
+  --color-primary: 0 0% 9%;
+  --color-primary-foreground: 0 0% 98%;
 
-    /* Secondary colors */
-    --color-secondary: 0 0% 96.1%;
-    --color-secondary-foreground: 0 0% 9%;
+  /* Secondary colors */
+  --color-secondary: 0 0% 96.1%;
+  --color-secondary-foreground: 0 0% 9%;
 
-    /* Muted colors */
-    --color-muted: 0 0% 96.1%;
-    --color-muted-foreground: 0 0% 45.1%;
+  /* Muted colors */
+  --color-muted: 0 0% 96.1%;
+  --color-muted-foreground: 0 0% 45.1%;
 
-    /* Accent colors */
-    --color-accent: 0 0% 96.1%;
-    --color-accent-foreground: 0 0% 9%;
+  /* Accent colors */
+  --color-accent: 0 0% 96.1%;
+  --color-accent-foreground: 0 0% 9%;
 
-    /* Destructive colors */
-    --color-destructive: 0 84.2% 60.2%;
-    --color-destructive-foreground: 0 0% 98%;
+  /* Destructive colors */
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 0 0% 98%;
 
-    /* Success colors - Verde */
-    --color-success: 142 76% 36%;
-    --color-success-foreground: 0 0% 98%;
+  /* Success colors - Verde */
+  --color-success: 142 76% 36%;
+  --color-success-foreground: 0 0% 98%;
 
-    /* Warning colors - Amarelo */
-    --color-warning: 38 92% 50%;
-    --color-warning-foreground: 0 0% 3.9%;
+  /* Warning colors - Amarelo */
+  --color-warning: 38 92% 50%;
+  --color-warning-foreground: 0 0% 3.9%;
 
-    /* Info colors - Azul */
-    --color-info: 217 91% 60%;
-    --color-info-foreground: 0 0% 98%;
+  /* Info colors - Azul */
+  --color-info: 217 91% 60%;
+  --color-info-foreground: 0 0% 98%;
 
-    /* Error colors - Vermelho */
-    --color-error: 0 84.2% 60.2%;
-    --color-error-foreground: 0 0% 98%;
+  /* Error colors - Vermelho */
+  --color-error: 0 84.2% 60.2%;
+  --color-error-foreground: 0 0% 98%;
 
-    /* Border radius */
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    /* Dark mode colors */
-    --color-background: 0 0% 3.9%;
-    --color-foreground: 0 0% 98%;
-    --color-border: 0 0% 14.9%;
-    --color-input: 0 0% 14.9%;
-    --color-ring: 0 0% 83.1%;
-
-    /* Card colors */
-    --color-card: 0 0% 3.9%;
-    --color-card-foreground: 0 0% 98%;
-
-    /* Popover colors */
-    --color-popover: 0 0% 3.9%;
-    --color-popover-foreground: 0 0% 98%;
-
-    /* Primary colors */
-    --color-primary: 0 0% 98%;
-    --color-primary-foreground: 0 0% 9%;
-
-    /* Secondary colors */
-    --color-secondary: 0 0% 14.9%;
-    --color-secondary-foreground: 0 0% 98%;
-
-    /* Muted colors */
-    --color-muted: 0 0% 14.9%;
-    --color-muted-foreground: 0 0% 63.9%;
-
-    /* Accent colors */
-    --color-accent: 0 0% 14.9%;
-    --color-accent-foreground: 0 0% 98%;
-
-    /* Destructive colors */
-    --color-destructive: 0 62.8% 30.6%;
-    --color-destructive-foreground: 0 0% 98%;
-
-    /* Success colors - Verde (dark mode) */
-    --color-success: 142 70% 45%;
-    --color-success-foreground: 0 0% 98%;
-
-    /* Warning colors - Amarelo (dark mode) */
-    --color-warning: 38 92% 50%;
-    --color-warning-foreground: 0 0% 3.9%;
-
-    /* Info colors - Azul (dark mode) */
-    --color-info: 217 91% 60%;
-    --color-info-foreground: 0 0% 98%;
-
-    /* Error colors - Vermelho (dark mode) */
-    --color-error: 0 62.8% 30.6%;
-    --color-error-foreground: 0 0% 98%;
-  }
+  /* Border radius */
+  --radius: 0.5rem;
 }
 
-@layer base {
-  * {
-    border-color: hsl(var(--color-border));
-  }
+.dark {
+  /* Dark mode colors */
+  --color-background: 0 0% 3.9%;
+  --color-foreground: 0 0% 98%;
+  --color-border: 0 0% 14.9%;
+  --color-input: 0 0% 14.9%;
+  --color-ring: 0 0% 83.1%;
 
-  body {
-    background-color: hsl(var(--color-background));
-    color: hsl(var(--color-foreground));
-  }
+  /* Card colors */
+  --color-card: 0 0% 3.9%;
+  --color-card-foreground: 0 0% 98%;
+
+  /* Popover colors */
+  --color-popover: 0 0% 3.9%;
+  --color-popover-foreground: 0 0% 98%;
+
+  /* Primary colors */
+  --color-primary: 0 0% 98%;
+  --color-primary-foreground: 0 0% 9%;
+
+  /* Secondary colors */
+  --color-secondary: 0 0% 14.9%;
+  --color-secondary-foreground: 0 0% 98%;
+
+  /* Muted colors */
+  --color-muted: 0 0% 14.9%;
+  --color-muted-foreground: 0 0% 63.9%;
+
+  /* Accent colors */
+  --color-accent: 0 0% 14.9%;
+  --color-accent-foreground: 0 0% 98%;
+
+  /* Destructive colors */
+  --color-destructive: 0 62.8% 30.6%;
+  --color-destructive-foreground: 0 0% 98%;
+
+  /* Success colors - Verde (dark mode) */
+  --color-success: 142 70% 45%;
+  --color-success-foreground: 0 0% 98%;
+
+  /* Warning colors - Amarelo (dark mode) */
+  --color-warning: 38 92% 50%;
+  --color-warning-foreground: 0 0% 3.9%;
+
+  /* Info colors - Azul (dark mode) */
+  --color-info: 217 91% 60%;
+  --color-info-foreground: 0 0% 98%;
+
+  /* Error colors - Vermelho (dark mode) */
+  --color-error: 0 62.8% 30.6%;
+  --color-error-foreground: 0 0% 98%;
 }
 
-/* Classes auxiliares para opacidade - necessário para Tailwind v4 */
-@layer utilities {
-  .bg-success\/10 {
-    background-color: hsl(var(--color-success) / 0.1);
-  }
-  .bg-success\/80 {
-    background-color: hsl(var(--color-success) / 0.8);
-  }
-  .bg-warning\/10 {
-    background-color: hsl(var(--color-warning) / 0.1);
-  }
-  .bg-warning\/80 {
-    background-color: hsl(var(--color-warning) / 0.8);
-  }
-  .bg-info\/10 {
-    background-color: hsl(var(--color-info) / 0.1);
-  }
-  .bg-info\/80 {
-    background-color: hsl(var(--color-info) / 0.8);
-  }
-  .bg-error\/10 {
-    background-color: hsl(var(--color-error) / 0.1);
-  }
-  .bg-error\/80 {
-    background-color: hsl(var(--color-error) / 0.8);
-  }
+* {
+  border-color: hsl(var(--color-border));
+}
 
-  /* Shadow colors */
-  .shadow-success\/20 {
-    box-shadow: 0 4px 6px -1px hsl(var(--color-success) / 0.2);
-  }
-  .shadow-warning\/20 {
-    box-shadow: 0 4px 6px -1px hsl(var(--color-warning) / 0.2);
-  }
-  .shadow-info\/20 {
-    box-shadow: 0 4px 6px -1px hsl(var(--color-info) / 0.2);
-  }
-  .shadow-destructive\/20 {
-    box-shadow: 0 4px 6px -1px hsl(var(--color-destructive) / 0.2);
-  }
+body {
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
 }
